@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.features.module.modules.misc
@@ -54,7 +54,7 @@ class AuthBypass : Module() {
         val map = HashMap<String, String>()
 
         val localeJson = JsonParser().parse(
-            AuthBypass::class.java.classLoader.getResourceAsStream("assets/minecraft/fdpclient/misc/item_names_in_pt_BR.json")!!
+            AuthBypass::class.java.classLoader.getResourceAsStream("assets/minecraft/gamingchair/misc/item_names_in_pt_BR.json")!!
                 .reader(Charsets.UTF_8)).asJsonObject
 
         brLangMap.clear()

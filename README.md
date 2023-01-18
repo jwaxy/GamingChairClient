@@ -34,4 +34,4 @@ Do the above and share your source code with everyone; just like we do!
 [Click for intructions](docs/WORKSPACE.md)
 
 ## Contributing
-[Click for information about Contributing to fdp](docs/NOTECONTRUBTIONS.md)
+[Click for information about Contributing to Gaming Chair Client](docs/NOTECONTRUBTIONS.md)

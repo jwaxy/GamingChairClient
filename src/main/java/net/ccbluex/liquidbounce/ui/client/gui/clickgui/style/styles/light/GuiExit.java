@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.client.gui.clickgui.style.styles.light;
@@ -29,7 +29,7 @@ public class GuiExit extends GuiScreen {
             if(Mouse.isButtonDown(0) && !mouseClicked)
                 mc.displayGuiScreen(null);
         } else mouseClicked = Mouse.isButtonDown(0) && !(mouseX >= width / 2 - 75 && mouseX <= width / 2 - 10 && mouseY >= height / 2 + 20 && mouseY <= height / 2 + 35);
-        //RenderUtils.drawImage(new ResourceLocation("fdpclient/clickgui/rect.png"), width / 2 - 80,height / 2 - 30,150,70);
+        //RenderUtils.drawImage(new ResourceLocation("gamingchair/clickgui/rect.png"), width / 2 - 80,height / 2 - 30,150,70);
         int fontHeight = Math.round(Fonts.font40.FONT_HEIGHT / 2);
         RenderUtils.drawRect(width / 2 - 80, height / 2 - 30, width / 2 + 70, height / 2 + 40,new Color(40,40,40,125).getRGB());
         RenderUtils.drawRect(width / 2 - 75, height / 2 + 20, width / 2 - 10, height / 2 + 35, new Color(19, 138, 225).getRGB());

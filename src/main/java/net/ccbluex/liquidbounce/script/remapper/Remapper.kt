@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.script.remapper
@@ -28,7 +28,7 @@ object Remapper {
             return
         // Load srg
         ClientUtils.logInfo("[Remapper] Loading srg...")
-        parseSrg(IOUtils.readLines(Remapper::class.java.classLoader.getResourceAsStream("assets/minecraft/fdpclient/scriptapi/mcp-stable_22.srg")))
+        parseSrg(IOUtils.readLines(Remapper::class.java.classLoader.getResourceAsStream("assets/minecraft/gamingchair/scriptapi/mcp-stable_22.srg")))
         srgLoaded = true
         ClientUtils.logInfo("[Remapper] Loaded srg.")
     }

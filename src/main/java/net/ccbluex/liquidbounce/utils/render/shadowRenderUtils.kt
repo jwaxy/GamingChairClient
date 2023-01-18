@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.utils.render
@@ -70,7 +70,7 @@ object shadowRenderUtils {
         if (!enableBlend) glEnable(GL_BLEND)
         if (!disableAlpha) glDisable(GL_ALPHA_TEST)
         GlStateManager.color(1f, 1f, 1f, alpha)
-        Minecraft.getMinecraft().textureManager.bindTexture(ResourceLocation("fdpclient/ui/shadow/$image.png"))
+        Minecraft.getMinecraft().textureManager.bindTexture(ResourceLocation("gamingchair/ui/shadow/$image.png"))
         drawModalRectWithCustomSizedTexture(
             x,
             y,
@@ -93,7 +93,7 @@ object shadowRenderUtils {
         val disableAlpha = !glIsEnabled(GL_ALPHA_TEST)
         if (!enableBlend) glEnable(GL_BLEND)
         if (!disableAlpha) glDisable(GL_ALPHA_TEST)
-        Minecraft.getMinecraft().textureManager.bindTexture(ResourceLocation("fdpclient/ui/shadow/$image.png"))
+        Minecraft.getMinecraft().textureManager.bindTexture(ResourceLocation("gamingchair/ui/shadow/$image.png"))
         GlStateManager.color(1f, 1f, 1f, 1f)
         drawModalRectWithCustomSizedTexture(
             x,

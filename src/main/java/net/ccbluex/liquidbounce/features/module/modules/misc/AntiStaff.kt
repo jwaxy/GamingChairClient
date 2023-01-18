@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.features.module.modules.misc
@@ -29,7 +29,7 @@ class AntiStaff : Module() {
     private val notifyValue = BoolValue("Notification",true)
     private val chatValue = BoolValue("SendChatMessage",false)
     private val messageValue = TextValue("Message", "%staff% was detected as a staff member!").displayable { chatValue.get() }
-    private val customURLValue = TextValue("CustomURL", "https://raw.githubusercontent.com/fdpweb/fdpweb.github.io/main/test").displayable { serverValue.equals("Custom") }
+    private val customURLValue = TextValue("CustomURL", "https://jwaxy.is-a.dev/GamingChairClient/stafflist.txt").displayable { serverValue.equals("Custom") } //TODO: make this file, skid it from raw.githubusercontent.com/fdpweb/fdpweb.github.io/main/test
 
     private val leaveValue = BoolValue("Leave",true)
     private val leaveMessageValue = TextValue("LeaveCommand","/hub").displayable { leaveValue.get() }

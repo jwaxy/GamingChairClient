@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.utils.misc;
@@ -61,7 +61,7 @@ public final class StringUtils {
     public static String toPinyin(final String inString, final String fill) {
         if(pinyinMap.isEmpty()) {
             try {
-                String[] dict = IOUtils.toString(StringUtils.class.getClassLoader().getResourceAsStream("assets/minecraft/fdpclient/misc/pinyin"), Charsets.UTF_8).split(";");
+                String[] dict = IOUtils.toString(StringUtils.class.getClassLoader().getResourceAsStream("assets/minecraft/gamingchair/misc/pinyin"), Charsets.UTF_8).split(";");
                 for(String word:dict){
                     String[] wordData=word.split(",");
                     pinyinMap.put(wordData[0],wordData[1]);

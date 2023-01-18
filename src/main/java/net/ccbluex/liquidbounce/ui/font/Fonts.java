@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.font;
@@ -215,7 +215,7 @@ public class Fonts {
 
     private static void initFonts() {
         try {
-            initSingleFont("regular.ttf", "assets/minecraft/fdpclient/font/regular.ttf");
+            initSingleFont("regular.ttf", "assets/minecraft/gamingchair/font/regular.ttf");
         }catch(IOException e) {
             e.printStackTrace();
         }
@@ -225,7 +225,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/"+fontname+".ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/"+fontname+".ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {
@@ -239,7 +239,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/icon.ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/icon.ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {
@@ -253,7 +253,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/regular.ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/regular.ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {
@@ -267,7 +267,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/SFBOLD.ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/SFBOLD.ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {
@@ -281,7 +281,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/tenacity.ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/tenacity.ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {
@@ -295,7 +295,7 @@ public class Fonts {
         Font font;
         try {
             InputStream is = Minecraft.getMinecraft().getResourceManager()
-                    .getResource(new ResourceLocation("fdpclient/font/tenacity-bold.ttf")).getInputStream();
+                    .getResource(new ResourceLocation("gamingchair/font/tenacity-bold.ttf")).getInputStream();
             font = Font.createFont(0, is);
             font = font.deriveFont(0, size);
         } catch (Exception ex) {

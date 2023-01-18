@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.cape
@@ -32,7 +32,7 @@ object GuiCapeManager : GuiScreen() {
     init {
         arrayOf("classic", "classic2", "aurora", "forest", "rose", "lavender", "ocean", "modern1", "modern2", "lava", "citrus", "fire", "nightlife", "abstract", "blur", "owner").forEach {
             try {
-                embeddedCapes.add(loadCapeFromResource(it, "assets/minecraft/fdpclient/cape/$it.png"))
+                embeddedCapes.add(loadCapeFromResource(it, "assets/minecraft/gamingchair/cape/$it.png"))
             } catch (e: Throwable){
                 System.out.println("Failed to load Capes")
             }
