@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.features.module.modules.client
@@ -71,12 +71,12 @@ object HUD : Module() {
     private fun renderWatermark() {
         var width = 3
         mc.fontRendererObj.drawStringWithShadow(
-            "FDP",
+            "Gaming Chair",
             3.0f,
             3.0f,
             rainbow().rgb
         )
-        width += mc.fontRendererObj.getStringWidth("FDP")
+        width += mc.fontRendererObj.getStringWidth("Gaming Chair")
         mc.fontRendererObj.drawStringWithShadow(
             "CLIENT",
             width.toFloat(),
@@ -90,7 +90,7 @@ object HUD : Module() {
         LiquidBounce.hud.update()
         if (mc.currentScreen == null && lastFontEpsilon != fontEpsilonValue.get()) {
             lastFontEpsilon = fontEpsilonValue.get()
-            alert("You need to reload FDPClient to apply changes!")
+            alert("You need to reload Gaming Chair Client to apply changes!")
         }
     }
 
@@ -106,8 +106,8 @@ object HUD : Module() {
         }
 
         if (state && blurValue.get() && !mc.entityRenderer.isShaderActive && event.guiScreen != null && !(event.guiScreen is GuiChat || event.guiScreen is GuiHudDesigner)) {
-            mc.entityRenderer.loadShader(ResourceLocation("fdpclient/blur.json"))
-        } else if (mc.entityRenderer.shaderGroup != null && mc.entityRenderer.shaderGroup!!.shaderGroupName.contains("fdpclient/blur.json")) {
+            mc.entityRenderer.loadShader(ResourceLocation("gamingchair/blur.json"))
+        } else if (mc.entityRenderer.shaderGroup != null && mc.entityRenderer.shaderGroup!!.shaderGroupName.contains("gamingchair/blur.json")) {
             mc.entityRenderer.stopUseShader()
         }
     }

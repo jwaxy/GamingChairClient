@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.client.gui.clickgui.style.styles.dropdown;
@@ -26,7 +26,7 @@ public class DropdownGUI extends GuiScreen {
     private int dragX;
     private int dragY;
     private int alpha;
-   private final ResourceLocation hudIcon = new ResourceLocation("fdpclient/ui/clickgui/hud.png");
+   private final ResourceLocation hudIcon = new ResourceLocation("gamingchair/ui/clickgui/hud.png");
     public DropdownGUI() {
 
     }

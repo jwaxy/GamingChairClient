@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.utils.render
@@ -30,7 +30,7 @@ object ShadowUtils : MinecraftInstance() {
     private var lastHeight = 0
     private var lastStrength = 0F
 
-    private val blurDirectory = ResourceLocation("fdpclient/shadow.json")
+    private val blurDirectory = ResourceLocation("gamingchair/shadow.json")
 
     @Throws(IOException::class)
     fun initShaderIfRequired(sc: ScaledResolution, strength: Float) {

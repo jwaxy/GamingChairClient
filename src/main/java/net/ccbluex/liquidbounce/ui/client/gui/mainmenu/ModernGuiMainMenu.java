@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.client.gui.mainmenu;
@@ -64,7 +64,7 @@ public class ModernGuiMainMenu extends GuiScreen {
             this.currentX += xDiff * 0.3F;
             this.currentY += yDiff * 0.3F;
             GlStateManager.translate(this.currentX / 30.0F, this.currentY / 15.0F, 0.0F);
-            RenderUtils.drawImage(new ResourceLocation("fdpclient/background.png"), -30, -30, this.res.getScaledWidth() + 60, this.res.getScaledHeight() + 60);
+            RenderUtils.drawImage(new ResourceLocation("gamingchair/background.png"), -30, -30, this.res.getScaledWidth() + 60, this.res.getScaledHeight() + 60);
             GlStateManager.translate(-this.currentX / 30.0F, -this.currentY / 15.0F, 0.0F);
             RenderUtils.drawRoundedCornerRect((float) this.width / 2.0F - 80.0F * ((float) this.butt.size() / 2.0F) - 3f, (float) this.height / 2.0F - 100.0F - 3f, (float) this.width / 2.0F + 80.0F * ((float) this.butt.size() / 2.0F) + 3f, (float) this.height / 2.0F + 103.0F, 10, new Color(0, 0, 0, 80).getRGB());
             FontLoaders.F18.drawCenteredString("Made by SkidderMC with love.",(float)this.width / 2.0F,(float)this.height / 2.0F + 70.0F,new Color(255,255,255,255).getRGB());

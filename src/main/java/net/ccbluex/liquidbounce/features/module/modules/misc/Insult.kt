@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.features.module.modules.misc
@@ -54,7 +54,7 @@ object Insult : Module() {
         try {
             // check file exists
             if (!insultFile.exists()) {
-                FileUtils.unpackFile(insultFile, "assets/minecraft/fdpclient/misc/insult.json")
+                FileUtils.unpackFile(insultFile, "assets/minecraft/gamingchair/misc/insult.json")
             }
             // read it
             val json = JsonParser().parse(insultFile.readText(Charsets.UTF_8))
@@ -101,7 +101,7 @@ object Insult : Module() {
     private fun sendInsultWords(msg: String, name: String) {
         var message = msg.replace("%name%", name)
         if (waterMarkValue.get()) {
-            message = "[FDPClient] $message"
+            message = "[GamingChairClient] $message"
         }
         mc.thePlayer.sendChatMessage(message)
     }

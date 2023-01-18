@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce
@@ -39,12 +39,12 @@ object LiquidBounce {
 
     // Client information
 
-    const val CLIENT_NAME = "FDPClient"
+    const val CLIENT_NAME = "Gaming Chair Client"
 
     var Darkmode = true
-    const val COLORED_NAME = "§7[§b§lFDPClient§7] "
-    const val CLIENT_CREATOR = "CCBlueX, Zywl & SkidderMC TEAM"
-    const val CLIENT_WEBSITE = "fdpinfo.github.io"
+    const val COLORED_NAME = "§7[§b§lGaming Chair Client§7] "
+    const val CLIENT_CREATOR = "Jwaxy"
+    const val CLIENT_WEBSITE = "jwaxy.is-a.dev/GamingChairClient"
     
     @JvmField
     val gitInfo = Properties().also {
@@ -58,7 +58,7 @@ object LiquidBounce {
 
     @JvmField
 
-    val CLIENT_VERSION = "v5.2.0"
+    val CLIENT_VERSION = "v0.0.1"
 
 
     @JvmField
@@ -89,7 +89,7 @@ object LiquidBounce {
     lateinit var keyBindManager: KeyBindManager
 
     // Menu Background
-    var background: ResourceLocation? = ResourceLocation("fdpclient/background.png")
+    var background: ResourceLocation? = ResourceLocation("gamingchair/background.png")
 
     val launchFilters = mutableListOf<EnumLaunchFilter>()
     private val dynamicLaunchOptions: Array<LaunchOption>
@@ -210,7 +210,7 @@ object LiquidBounce {
 
     private fun checkUpdate() {
         try {
-            val get = HttpUtils.get("https://api.github.com/repos/SkidderMC/FDPClient/commits/${gitInfo["git.branch"]}")
+            val get = HttpUtils.get("https://api.github.com/repos/jwaxy/GamingChairClient/commits/${gitInfo["git.branch"]}")
 
             val jsonObj = JsonParser()
                 .parse(get).asJsonObject

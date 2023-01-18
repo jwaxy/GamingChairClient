@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.file
@@ -20,7 +20,7 @@ import java.io.*
 import javax.imageio.ImageIO
 
 class FileManager : MinecraftInstance() {
-    val dir = File(mc.mcDataDir, "FDPCLIENT-1.8")
+    val dir = File(mc.mcDataDir, "GAMINGCHAIR-DATA")
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
     val soundsDir = File(dir, "sounds")

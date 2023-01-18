@@ -1,6 +1,6 @@
 /*
  * Gaming Chair Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by Gaming Chair Client.
  * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.ui.client.hud.element.elements
@@ -325,10 +325,10 @@ class Notification(
         if(style.equals("Tenacity")){ 
         val fontRenderer = Fonts.font35
         val thisWidth=100.coerceAtLeast(fontRenderer.getStringWidth(this.title).coerceAtLeast(fontRenderer.getStringWidth(this.content)) + 40)
-        val error = ResourceLocation("fdpclient/ui/notifications/icons/tenacity/cross.png")
-        val successful = ResourceLocation("fdpclient/ui/notifications/icons/tenacity/tick.png")
-        val warn = ResourceLocation("fdpclient/ui/notifications/icons/tenacity/warning.png")
-        val info = ResourceLocation("fdpclient/ui/notifications/icons/tenacity/info.png")
+        val error = ResourceLocation("gamingchair/ui/notifications/icons/tenacity/cross.png")
+        val successful = ResourceLocation("gamingchair/ui/notifications/icons/tenacity/tick.png")
+        val warn = ResourceLocation("gamingchair/ui/notifications/icons/tenacity/warning.png")
+        val info = ResourceLocation("gamingchair/ui/notifications/icons/tenacity/info.png")
         if(type.renderColor == Color(0xFF2F2F)){
             RenderUtils.drawRoundedCornerRect(-18F,1F,thisWidth.toFloat(),height.toFloat() - 2F,5f,Color(180,0,0,190).rgb)
             RenderUtils.drawImage(error,-13,5,18,18)
@@ -366,7 +366,7 @@ class Notification(
        }
 
         if(style.equals("Intellij")) {
-                val notifyDir = "fdpclient/notifications/icons/noti/intellij/"
+                val notifyDir = "gamingchair/notifications/icons/noti/intellij/"
                 val imgSuccess = ResourceLocation("${notifyDir}checkmark.png")
                 val imgError = ResourceLocation("${notifyDir}error.png")
                 val imgWarning = ResourceLocation("${notifyDir}warning.png")
