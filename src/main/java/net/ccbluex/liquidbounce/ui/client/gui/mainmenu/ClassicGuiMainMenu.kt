@@ -1,6 +1,6 @@
 /*
- * FDPClient Hacked Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by LiquidBounce.
+ * Gaming Chair Client
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
  * https://github.com/UnlegitMC/FDPClient/
  */
 package net.ccbluex.liquidbounce.ui.client.gui.mainmenu

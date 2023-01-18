@@ -6,7 +6,7 @@
 A free mixin-based injection hacked-client for Minecraft using Minecraft Forge based on LiquidBounce.
 
 Website: [fdpinfo.github.io](https://fdpinfo.github.io)  
-Latest [github-actions](https://github.com/SkidderMC/FDPClient/actions/workflows/build.yml?query=event%3Apush)  
+Latest [github-actions](https://github.com/jwaxy/GamingChairClient/actions/workflows/build.yml?query=event%3Apush)  
 Discord: [dsc.gg/fdpdiscord](https://dsc.gg/fdpdiscord)
 
 
@@ -22,7 +22,7 @@ Mixins can be used to modify classes at runtime before they are loaded. FDPClien
 ## Contributions
 We welcome contributions, but you have to follow the following rules in order for us to merge your pull request.
 
-You can make a pull request [here](https://github.com/SkidderMC/FDPClient/issues)!
+You can make a pull request [here](https://github.com/jwaxy/GamingChairClient/issues)!
 
 ### Language and Code Quality
 Your code needs to be able to be built, also please ensure your code has little to no bugs.
