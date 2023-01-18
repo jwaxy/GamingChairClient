@@ -1,4 +1,5 @@
 <div align="center">
+<img src="https://i.ibb.co/JxVwKFZ/icon.png" alt="logo" width="400" height="400">
 <h1>Gaming Chair Client</h1>
 <h3>A free mixin-based injection hacked-client for Minecraft using Minecraft Forge based on FDP Client that is based on LiquidBounce.</h3>
 Website: <a href="https://jwaxy.is-a.dev/GamingChairClient">jwaxy.is-a.dev/GamingChairClient/</a><br>
