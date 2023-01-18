@@ -207,6 +207,8 @@ class GuiAltManager(private val prevGui: GuiScreen) : GuiScreen() {
     }
 
     companion object {
+        val altService = AltService()
+
         var randomAltField = GuiTextField(2, Minecraft.getMinecraft().fontRendererObj, 0, 0, 0, 0)
 
         init {
