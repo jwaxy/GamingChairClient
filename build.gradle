@@ -16,8 +16,8 @@ repositories {
 }
 
 version = "5.1.0"
-group = "org.unlegitmc.fdp"
-archivesBaseName = "FDPClient"
+group = "me.jwaxy.gamingchair"
+archivesBaseName = "GamingChairClient"
 
 sourceCompatibility = targetCompatibility = 1.8
 compileJava.options.encoding = "UTF-8"
@@ -126,11 +126,11 @@ jar {
             "FMLCorePlugin": "net.ccbluex.liquidbounce.injection.forge.TransformerLoader",
             "FMLCorePluginContainsFMLMod": true,
             "ForceLoadAsMod": true,
-            "MixinConfigs": "mixins.fdpclient.json",
+            "MixinConfigs": "mixins.gamingchair.json",
             "ModSide": "CLIENT",
             "TweakClass": "org.spongepowered.asm.launch.MixinTweaker",
             "TweakOrder": "0",
-            "FMLAT": "fdpclient_at.cfg",
+            "FMLAT": "gamingchair_at.cfg",
     )
 
     enabled = false
@@ -139,7 +139,7 @@ jar {
 mixin {
     disableRefMapWarning = true
     defaultObfuscationEnv searge
-    add sourceSets.main, "mixins.fdpclient.refmap.json"
+    add sourceSets.main, "mixins.gamingchair.refmap.json"
 }
 
 reobf {
