@@ -1,7 +1,7 @@
 /*
- * FDPClient Hacked Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by LiquidBounce.
- * https://github.com/SkidderMC/FDPClient/
+ * Gaming Chair Client
+ * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by FDP Client.
+ * https://github.com/jwaxy/GamingChairClient/
  */
 package net.ccbluex.liquidbounce.injection.forge;
 
@@ -21,7 +21,7 @@ public class TransformerLoader implements IFMLLoadingPlugin {
 
     public TransformerLoader() {
         MixinBootstrap.init();
-        Mixins.addConfiguration("mixins.fdpclient.json");
+        Mixins.addConfiguration("mixins.gamingchair.json");
         MixinEnvironment.getDefaultEnvironment().setSide(MixinEnvironment.Side.CLIENT);
     }
 

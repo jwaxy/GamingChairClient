@@ -1,7 +1,7 @@
 /*
- * FDPClient Hacked Client
+ * Gaming Chair Client
  * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge.
- * https://github.com/SkidderMC/FDPClient/
+ * https://github.com/jwaxy/GamingChairClient/
  */
 
 package net.ccbluex.liquidbounce.features.module.modules.movement.speeds.verus
