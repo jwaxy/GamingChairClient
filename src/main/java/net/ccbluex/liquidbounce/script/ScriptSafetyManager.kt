@@ -17,7 +17,7 @@ import java.util.*
 
 object ScriptSafetyManager {
 
-    private val level = ProtectionLevel.valueOf((System.getProperty("fdp.script.safety") ?: "safe").uppercase()).level
+    private val level = ProtectionLevel.valueOf((System.getProperty("gamingchair.script.safety") ?: "safe").uppercase()).level
     private val restrictedClasses: Map<Class<*>, Int>
     private val restrictedChilds: Map<Class<*>, Pair<String, Int>>
 
@@ -30,7 +30,7 @@ object ScriptSafetyManager {
     }
 
     init {
-        ClientUtils.logInfo("[FDPScriptAPI] Script safety level: ${ProtectionLevel.values().find { it.level == level }?.name}($level)") // maybe we should think about performance here?
+        ClientUtils.logInfo("[GamingChairScriptAPI] Script safety level: ${ProtectionLevel.values().find { it.level == level }?.name}($level)") // maybe we should think about performance here?
 
         val restrictedClasses = mutableMapOf<Class<*>, Int>()
         val restrictedChilds = mutableMapOf<Class<*>, Pair<String, Int>>()
@@ -136,10 +136,10 @@ object ScriptSafetyManager {
         val message = klass + (if(child.isNotEmpty()) ".$child" else "")
         if(!alerted.contains(message)) {
             alerted.add(message)
-            ClientUtils.logWarn("[FDPScriptAPI] \n" +
+            ClientUtils.logWarn("[GamingChairScriptAPI] \n" +
                     "========= WARNING =========\n" +
                     "The script tried to make a restricted call: $message,\n" +
-                    "please add a jvm argument to disable this check: -Dfdp.script.safety=HARMFUL\n" +
+                    "please add a jvm argument to disable this check: -Dgamingchair.script.safety=HARMFUL\n" +
                     "===========================")
         }
     }

@@ -104,7 +104,7 @@ public class GuiImportConfig extends GuiScreen
         RenderUtils.drawRect((float) ((1-aaa[0])*(w/3 + 130)), (float) 0, (float) ((1-aaa[0])*(w/3 + 132)),h, ColorManager.astolfoRainbow(1,50,1));
         username.drawTextBox();
         FontLoaders.F18.drawString(message, (float) ((1-aaa[0])*(15)), 15, new Color(200,200,200,150).getRGB());
-        FontLoaders.F14.drawString("Tips: FDPCLIENT", (float) ((1-aaa[0])*(18))+4, this.height / 2 + 50, new Color(189, 189, 189).getRGB());
+        FontLoaders.F14.drawString("Tips: GamingChairClient", (float) ((1-aaa[0])*(18))+4, this.height / 2 + 50, new Color(189, 189, 189).getRGB());
         FontLoaders.F14.drawString("You need to upload full body unlock link used by each developer", (float) ((1-aaa[0])*(18))+4, this.height / 2 + 58, new Color(189, 189, 189).getRGB());
         FontLoaders.F18.drawString(" URL:", (float) ((1-aaa[0])*(18)), this.height / 2 + 8, new Color(189, 189, 189).getRGB());
         FontLoaders.F40.drawString("LIFrame", (float) ((1-aaa[0])*(18)), this.height / 2 - 20, new Color(255, 255, 255).getRGB());

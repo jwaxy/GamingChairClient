@@ -165,7 +165,7 @@ class Text(
         return result.toString()
     }
     fun getClientName(i: Int,i2: Int): String{
-        return "FDPClient".substring(i,i2);
+        return "GamingChairClient".substring(i,i2); // wtf this does? no call to the function anyhwere
     }
     /**
      * Draw element

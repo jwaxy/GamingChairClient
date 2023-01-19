@@ -176,8 +176,8 @@ public class LightClickGUI extends GuiScreen implements GuiYesNoCallback {
         oldX = mouseX;
         oldY = mouseY;
 
-        // fdp water mark
-        Fonts.font35.drawString("Made by SkidderMC", startX + 210, startY + 295, new Color(200,200,200).getRGB());
+        // watermark
+        Fonts.font35.drawString("Made by Jwaxy", startX + 210, startY + 295, new Color(200,200,200).getRGB());
 
         // new sexy background
         RenderUtils.drawRoundedRect2((int) startX - 5, (int) startY + 10, (int) startX + 400, (int) startY + 310, 3,
