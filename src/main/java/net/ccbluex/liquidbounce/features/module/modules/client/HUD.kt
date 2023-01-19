@@ -71,17 +71,10 @@ object HUD : Module() {
     private fun renderWatermark() {
         var width = 3
         mc.fontRendererObj.drawStringWithShadow(
-            "Gaming Chair",
+            "Gaming Chair Client",
             3.0f,
             3.0f,
             rainbow().rgb
-        )
-        width += mc.fontRendererObj.getStringWidth("Gaming Chair")
-        mc.fontRendererObj.drawStringWithShadow(
-            "CLIENT",
-            width.toFloat(),
-            3.0f,
-            -1
         )
     }
 
