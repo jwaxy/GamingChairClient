@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: GamingChairClient
-          path: build/libs/GamingChairClient-build.jar
+          path: build/libs/GamingChairClient-`git rev-parse --short "$GITHUB_SHA"`.jar
