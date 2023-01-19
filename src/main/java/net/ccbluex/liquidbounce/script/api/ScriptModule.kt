@@ -154,7 +154,7 @@ class ScriptModule(private val moduleObject: JSObject) : Module() {
         try {
             events[eventName]?.call(moduleObject, payload)
         } catch (throwable: Throwable) {
-            ClientUtils.logError("[FDPScriptAPI] Exception in module '$name'!", throwable)
+            ClientUtils.logError("[GamingChairScriptAPI] Exception in module '$name'!", throwable)
         }
     }
 }

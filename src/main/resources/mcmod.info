@@ -1,14 +1,14 @@
 [
   {
-    "modid": "fdpclient",
-    "name": "FDPClient",
+    "modid": "gamingchairclient",
+    "name": "GamingChairClient",
     "description": "Minecraft 1.8 Utility mod",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://fdpinfo.github.io",
+    "url": "http://gg.gg/GamingChairClient",
     "updateUrl": "",
-    "authorList": ["CCBlueX", "Zywl", "SkidderMC"],
-    "credits": "",
+    "authorList": ["Jwaxy", "CCBlueX", "Zywl", "SkidderMC"],
+    "credits": "Credits to CCBlueX, Zywl, SkidderMC for FDP and LiquidBounce-legacy",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []

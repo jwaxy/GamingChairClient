@@ -127,7 +127,7 @@ class Script(private val scriptFile: File) : MinecraftInstance() {
 
     fun supportLegacyScripts() {
         if (!scriptText.lines().first().contains("api_version=2")) {
-            ClientUtils.logWarn("[FDPScriptAPI] Running script '${scriptFile.name}' with legacy support.")
+            ClientUtils.logWarn("[GamingChairScriptAPI] Running script '${scriptFile.name}' with legacy support.")
             val legacyScript =
                 LiquidBounce::class.java.getResource("/assets/minecraft/gamingchair/scriptapi/legacy.js")?.readText()
             scriptEngine.eval(legacyScript)
@@ -187,7 +187,7 @@ class Script(private val scriptFile: File) : MinecraftInstance() {
         try {
             events[eventName]?.call(null)
         } catch (throwable: Throwable) {
-            ClientUtils.logError("[FDPScriptAPI] Exception in script '$scriptName'!", throwable)
+            ClientUtils.logError("[GamingChairScriptAPI] Exception in script '$scriptName'!", throwable)
         }
     }
 }

@@ -5,7 +5,7 @@
 ![Minecraft](https://img.shields.io/badge/game-Minecraft-brightgreen)  
 A free mixin-based injection hacked-client for Minecraft using Minecraft Forge based on FDP Client that is based on LiquidBounce.
 
-Website: [jwaxy.is-a.dev/GamingChairClient](https://jwaxy.is-a.dev/GamingChairClient/)  
+Website: [jwaxy.is-a.dev/GamingChairClient](http://gg.gg/GamingChairClient)  
 Latest [github-actions](https://nightly.link/jwaxy/GamingChairClient/workflows/build/main/GamingChairClient.zip)  
 Discord: [dsc.gg](https://dsc.gg)
 
