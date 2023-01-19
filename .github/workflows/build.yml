@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: chmod +x ./gradlew && ./gradlew setupCiWorkspace && ./gradlew build 
       - name: Rename build artifacts
-        run: mv build/libs/GamingChairClient-*.jar build/libs/GamingChairClient-build.jar
+        run: mv build/libs/GamingChairClient-*.jar build/libs/GamingChairClient-`git rev-parse --short "$GITHUB_SHA"`.jar
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
