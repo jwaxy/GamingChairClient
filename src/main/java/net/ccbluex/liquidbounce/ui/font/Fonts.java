@@ -9,6 +9,7 @@ import com.google.gson.*;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.utils.ClientUtils;
 import net.ccbluex.liquidbounce.utils.FileUtils;
+import net.ccbluex.liquidbounce.ui.client.gui.fonts.impl.SimpleFontManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.util.ResourceLocation;
@@ -408,15 +409,23 @@ public class Fonts {
 
     private static Font getFont(final String fontName, final int size) {
         try {
-            final InputStream inputStream = new FileInputStream(new File(LiquidBounce.fileManager.getFontsDir(), fontName));
+            final InputStream inputStream = new FileInputStream(new File(SimpleFontManager.FONT_DIRECTORY, fontName));
             Font awtClientFont = Font.createFont(Font.TRUETYPE_FONT, inputStream);
             awtClientFont = awtClientFont.deriveFont(Font.PLAIN, size);
             inputStream.close();
             return awtClientFont;
         }catch(final Exception e) {
             e.printStackTrace();
-
-            return new Font("default", Font.PLAIN, size);
+            try {
+                final InputStream inputStream = new FileInputStream(new File(LiquidBounce.fileManager.fontsDir, fontName));
+                Font awtClientFont = Font.createFont(Font.TRUETYPE_FONT, inputStream);
+                awtClientFont = awtClientFont.deriveFont(Font.PLAIN, size);
+                inputStream.close();
+                return awtClientFont;
+            }catch(final Exception e) {
+                e.printStackTrace();
+                return new Font("default", Font.PLAIN, size);
+            }
         }
     }
 }
