@@ -44,7 +44,7 @@ object LiquidBounce {
     var Darkmode = true
     const val COLORED_NAME = "§7[§b§lGaming Chair Client§7] "
     const val CLIENT_CREATOR = "Jwaxy"
-    const val CLIENT_WEBSITE = "jwaxy.is-a.dev/GamingChairClient"
+    const val CLIENT_WEBSITE = "gg.gg/GamingChairClient"
     
     @JvmField
     val gitInfo = Properties().also {
