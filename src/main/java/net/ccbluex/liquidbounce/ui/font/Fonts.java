@@ -409,7 +409,7 @@ public class Fonts {
     private static Font getFont(final String fontName, final int size) {
         try {
             // final InputStream inputStream = new FileInputStream(new File(ResourceLocation("gamingchair/font/"), fontName));
-            final InputStream inputStream = Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("gamingchair/font/", fontName)).getInputStream();
+            final InputStream inputStream = Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("gamingchair/font/"+fontName)).getInputStream();
             Font awtClientFont = Font.createFont(Font.TRUETYPE_FONT, inputStream);
             awtClientFont = awtClientFont.deriveFont(Font.PLAIN, size);
             inputStream.close();
@@ -417,7 +417,7 @@ public class Fonts {
         }catch(final Exception e) {
             e.printStackTrace();
             try {
-                final InputStream inputStream = new FileInputStream(new File("GAMINGCHAIR-DATA/fonts/", fontName));
+                final InputStream inputStream = new FileInputStream(new File("GAMINGCHAIR-DATA/fonts/"+fontName));
                 Font awtClientFont = Font.createFont(Font.TRUETYPE_FONT, inputStream);
                 awtClientFont = awtClientFont.deriveFont(Font.PLAIN, size);
                 inputStream.close();
